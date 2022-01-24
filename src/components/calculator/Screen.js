@@ -1,5 +1,11 @@
+import CurrencyHandler from "./currencies/CurrencyHandler";
+
 function Screen() {
-  return <div>This is a screen</div>;
+  return (
+    <div>
+      <CurrencyHandler conversion="dai" />
+    </div>
+  );
 }
 
 export default Screen;
