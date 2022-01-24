@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function CurrencyHandler(props) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState("000.00");
   let currencyAPI = "";
   switch (props.conversion) {
     case "btc":
@@ -29,7 +29,7 @@ function CurrencyHandler(props) {
     })
     .catch((error) => console.log(error));
 
-  return <div>{value}</div>;
+  return <div>1 <strong>{props.conversion}</strong> {value} <strong>AR$</strong></div>;
 }
 
 export default CurrencyHandler;
