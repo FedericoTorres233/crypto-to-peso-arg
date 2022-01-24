@@ -1,5 +1,5 @@
 .bg {
-  background: rgb(2, 0, 36) cover;
+  background: rgb(2, 0, 36);
   background: linear-gradient(
     318deg,
     rgba(2, 0, 36, 1) 0%,
@@ -8,9 +8,16 @@
     rgba(4, 196, 160, 1) 100%
   );
   box-shadow: inset 1px 1px 50px;
+  display: grid;
+  place-items: center;
 }
 
-.calculator{
-    display:grid;
-    place-items:center;
+.calculator {
+    padding:1rem;
+    border:8px solid gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
