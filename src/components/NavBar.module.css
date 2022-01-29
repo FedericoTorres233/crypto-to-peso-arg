@@ -1,10 +1,50 @@
 .all {
+  margin: 0;
+  padding: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    318deg,
+    rgb(109, 107, 148) 0%,
+    rgba(99, 99, 209, 1) 0%,
+    rgb(108, 91, 124) 50%,
+    rgb(56, 55, 121) 100%
+  );
+  padding: 0rem;
   display: grid;
-  grid-template-columns: 50vh 50vh;
-  list-style: none;
-  padding: 1rem;
+  place-items: center;
+  height:100%;
+  max-height: fit-content;
 }
 
-.all ul li{
+.h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  display: inline;
+  padding: 0px 20vh;
+}
+
+.a {
+  padding: 8px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
   text-decoration: none;
+}
+
+.a:hover {
+  color: gray;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -moz-transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -ms-transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -o-transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
