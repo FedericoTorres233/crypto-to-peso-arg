@@ -27,7 +27,9 @@ function CurrencyHandler(props) {
     .then((data) => {
       setValue(
         Math.round(
-          Object.values(data)[0].ars * 2.15 * (props.value > 0 ? props.value : 0)
+          Object.values(data)[0].ars *
+            2.15 *
+            (props.value > 0 ? props.value : 0)
         )
       );
     })

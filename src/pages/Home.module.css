@@ -21,8 +21,15 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   height: 10rem;
-  width: 20rem;
+  width: 50rem;
   align-items: center;
   display: grid;
   place-items: center;
+}
+
+.calculator {
+  background-color: rgba(255, 255, 240, 0.226);
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: black 0px 5px 15px;
 }
