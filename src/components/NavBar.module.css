@@ -1,0 +1,9 @@
+.all {
+  display: grid;
+  grid-template-columns: 50vh 50vh;
+  list-style: none;
+  padding: 1rem;
+}
+
+.all ul li a{
+}
