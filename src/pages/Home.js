@@ -1,18 +1,30 @@
 import Screen from "../components/calculator/Screen";
-import Input from "../components/calculator/Input";
 import SwitchCurrencies from "../components/calculator/SwitchCurrencies";
-import CurrentConversion from "../components/calculator/CurrentConversion";
 
 import classes from "./Home.module.css";
+import { useState } from "react";
 
 function Home() {
+  const [formValue, setFormValue] = useState();
+  const [buttonValue, setButtonValue] = useState();
+
+  const changeHandler = (form) => {
+    form.preventDefault();
+    setFormValue(form.target.value);
+  };
+
   return (
     <div className={classes.bg}>
       <div className={classes.calculator}>
-        <Screen /> {/* The screen of the calculator */}
-        <Input /> {/* Where you enter the value */}
-        <CurrentConversion />
-        <SwitchCurrencies />
+        <Screen money={formValue} currency={buttonValue}/> {/* The screen of the calculator */}
+        <input
+          type="number"
+          name="input"
+          value={formValue}
+          placeholder="Enter the pesos"
+          onChange={changeHandler}
+        ></input>
+        <SwitchCurrencies changeButton={setButtonValue}/>
       </div>
     </div>
   );
